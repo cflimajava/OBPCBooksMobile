@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/card_view_reserva">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/txt_data_criacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:textColor="@color/blue_bandeira_bra"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="16/05/2021 14:10:33" />
+
+        <TextView
+            android:id="@+id/txt_status_reserva"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PENDENTE"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/green_variante_bandeira_bra"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn_cancelar_reserva"
+            app:layout_constraintStart_toEndOf="@+id/txt_data_criacao"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="8dp"/>
+
+        <TextView
+            android:id="@+id/lable_reserva_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ID: "
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_cancelar_reserva"
+            app:layout_constraintStart_toStartOf="@+id/txt_data_criacao"
+            app:layout_constraintTop_toBottomOf="@+id/txt_data_criacao" />
+
+        <TextView
+            android:id="@+id/txt_reserva_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginVertical="4dp"
+            android:textColor="@color/blue_variante_bandeira_bra"
+            android:text="60a06414c86164126eac6ed2"
+            android:textSize="12sp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintBottom_toTopOf="@+id/btn_cancelar_reserva"
+            app:layout_constraintStart_toEndOf="@+id/lable_reserva_id"
+            app:layout_constraintTop_toBottomOf="@+id/txt_data_criacao"
+            app:layout_constraintEnd_toEndOf="@+id/txt_data_criacao"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancelar_reserva"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            android:backgroundTint="@color/white"
+            android:text="Cancelar"
+            android:textColor="@color/yellow_variante_bandeira_bra"
+            app:cornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_reserva_id"
+            app:rippleColor="@color/yellow_variante_bandeira_bra" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

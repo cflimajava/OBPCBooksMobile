@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">OBPC Books</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_reservado_com_sucesso">Livro(s) reservado(s) com sucesso.\n
+        Reserve deverá ser retirada no prazo maximo de 72h.\n
+        Caso contrário reserva será cancelada automaticamente.\n
+        Abaixo número da RESERVA.\n</string>
+
+    <string name="texto_exemplo_resumo">
+            Do mesmo modo, a contínua expansão de nossa atividade acarreta um processo de reformulação e modernização do investimento em reciclagem técnica.
+        É claro que o entendimento das metas propostas aponta para a melhoria dos relacionamentos verticais entre as hierarquias. A nível organizacional,
+        a percepção das dificuldades possibilita uma melhor visão global do orçamento setorial.
+          O incentivo ao avanço tecnológico, assim como a revolução dos costumes ainda não demonstrou convincentemente que vai participar na mudança das
+        condições financeiras e administrativas exigidas. A certificação de metodologias que nos auxiliam a lidar com a competitividade nas transações
+        comerciais talvez venha a ressaltar a relatividade das diretrizes de desenvolvimento para o futuro.
+    </string>
+
+    <string name="txt_exemplo_comentario">
+        Todavia, a contínua expansão de nossa atividade facilita a criação do levantamento das variáveis envolvidas.
+    </string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/blue_variante_bandeira_bra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container_msg_sucesso">
+
+            <TextView
+                android:id="@+id/txt_msg_reservado_com_sucesso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/container_msg_sucesso"
+                app:layout_constraintStart_toStartOf="@+id/container_msg_sucesso"
+                app:layout_constraintTop_toTopOf="@+id/container_msg_sucesso" />
+
+            <TextView
+                android:id="@+id/txt_msg_reservado_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/txt_msg_reservado_com_sucesso"
+                app:layout_constraintEnd_toEndOf="@+id/txt_msg_reservado_com_sucesso"
+                app:layout_constraintTop_toBottomOf="@+id/txt_msg_reservado_com_sucesso"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/yellow_variante_bandeira_bra"
+                android:textStyle="bold"
+                android:background="@color/green_variante_bandeira_bra"
+                android:hint="60a06414c86164126eac6ed2"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

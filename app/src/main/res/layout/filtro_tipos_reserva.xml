@@ -1,0 +1,115 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/label_pendentes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pendentes"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/label_ativos"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Switch
+    android:id="@+id/switch_tipo_reserva_pendentes"
+    app:layout_constraintStart_toStartOf="@id/label_pendentes"
+    app:layout_constraintTop_toBottomOf="@id/label_pendentes"
+    app:layout_constraintEnd_toEndOf="@id/label_pendentes"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:checked="true" />
+
+
+    <TextView
+        android:id="@+id/label_ativos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ativos"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/label_pendentes"
+        app:layout_constraintEnd_toStartOf="@id/label_finalizados"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"/>
+
+    <Switch
+        android:id="@+id/switch_tipo_reserva_ativos"
+        app:layout_constraintStart_toStartOf="@id/label_ativos"
+        app:layout_constraintEnd_toEndOf="@id/label_ativos"
+        app:layout_constraintTop_toBottomOf="@id/label_ativos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/label_finalizados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Finalizados"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/label_ativos"
+        app:layout_constraintEnd_toStartOf="@id/label_cancelados"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"/>
+
+    <Switch
+        android:id="@+id/switch_tipo_reserva_finalizados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/label_finalizados"
+        app:layout_constraintEnd_toEndOf="@id/label_finalizados"
+        app:layout_constraintTop_toBottomOf="@id/label_finalizados"
+        />
+
+
+    <TextView
+        android:id="@+id/label_cancelados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelados"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/label_finalizados"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/label_atrasados"
+        android:layout_marginLeft="8dp"/>
+
+    <Switch
+        android:id="@+id/switch_tipo_reserva_cancelados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/label_cancelados"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/label_cancelados"
+        app:layout_constraintTop_toBottomOf="@id/label_cancelados"/>
+
+    <TextView
+        android:id="@+id/label_atrasados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Atrasados"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/label_cancelados"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="8dp"/>
+
+    <Switch
+        android:id="@+id/switch_tipo_reserva_atrasados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/label_atrasados"
+        app:layout_constraintStart_toStartOf="@id/label_atrasados"
+        app:layout_constraintTop_toBottomOf="@id/label_atrasados" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

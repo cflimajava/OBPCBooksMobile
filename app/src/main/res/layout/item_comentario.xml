@@ -1,0 +1,86 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container_comentario_item"
+            android:paddingBottom="8dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/txt_comentario_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/container_comentario_item"
+                app:layout_constraintStart_toStartOf="@+id/container_comentario_item"
+                app:layout_constraintTop_toTopOf="@+id/container_comentario_item"
+                tools:text="cris@email.com"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/txt_comentario_data_criacao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/container_comentario_item"
+                app:layout_constraintTop_toTopOf="@+id/container_comentario_item"
+                tools:text="26/01/2021 17:55:44"
+                android:textSize="12sp"/>
+
+
+            <TextView
+                android:id="@+id/txt_comentario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_exemplo_comentario"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceBody2"
+                app:layout_constraintStart_toStartOf="@id/txt_comentario_user"
+                app:layout_constraintTop_toBottomOf="@id/txt_comentario_user"
+                app:layout_constraintEnd_toEndOf="@id/txt_comentario_user"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_editar_comentario"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="@color/white"
+                android:text="Editar"
+                android:textColor="@color/green_variante_bandeira_bra"
+                app:cornerRadius="5dp"
+                app:layout_constraintEnd_toStartOf="@id/btn_excluir_comentario"
+                app:layout_constraintTop_toBottomOf="@+id/txt_comentario"
+                app:rippleColor="@color/yellow_variante_bandeira_bra" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_excluir_comentario"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="@color/white"
+                android:text="Excluir"
+                android:textColor="@color/yellow_variante_bandeira_bra"
+                app:cornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/container_comentario_item"
+                app:layout_constraintTop_toBottomOf="@+id/txt_comentario"
+                app:rippleColor="@color/yellow_variante_bandeira_bra" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:orientation="horizontal">
+        <item
+            android:id="@+id/tipo_reserva_pendentes"
+            android:title="Pendentes"
+            android:tooltipText="Pendentes"
+            app:actionLayout="@layout/filtro_tipos_reserva"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/tipo_reserva_ativas"
+            android:title="Ativas"
+            app:actionLayout="@layout/filtro_tipos_reserva"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/app_bar_finalizadas"
+            android:title="Finalizadas"
+            app:actionLayout="@layout/filtro_tipos_reserva"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/app_bar_canceladas"
+            android:title="Switch"
+            app:actionLayout="@layout/filtro_tipos_reserva"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/app_bar_atrasadas"
+            android:title="Switch"
+            app:actionLayout="@layout/filtro_tipos_reserva"
+            app:showAsAction="always" />
+
+    </group>
+
+</menu>

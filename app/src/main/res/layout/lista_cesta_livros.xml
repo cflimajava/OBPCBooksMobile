@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_cesta_livros_selecionados"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finalizar_solicitacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_lista_livro" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_finalizar_solicitacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Finalizar Solicitação"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        app:rippleColor="@color/blue_variante_bandeira_bra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="10dp"
+
+        android:onClick="finalizarSolicitacao"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

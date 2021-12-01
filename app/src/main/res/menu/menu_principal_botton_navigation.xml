@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_menu_pesquisar"
+        android:icon="@drawable/ic_action_lupas"
+        android:title="Pesquisar" />
+
+    <item
+        android:id="@+id/bottom_menu_cesta"
+        android:icon="@drawable/ic_action_baskets"
+        android:title="Cesta"/>
+
+    <item
+        android:id="@+id/bottom_menu_reservas"
+        android:icon="@drawable/ic_action_list"
+        android:title="Reservas"/>
+
+    <item
+        android:id="@+id/bottom_menu_sair"
+        android:icon="@drawable/icon_action_logout_"
+        android:title="Sair"/>
+
+</menu>

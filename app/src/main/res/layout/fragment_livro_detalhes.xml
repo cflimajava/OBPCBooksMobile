@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/detalhes_titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Titulo do Livro"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/detalhes_ano_lancamento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/detalhes_titulo"
+            app:layout_constraintEnd_toEndOf="@+id/detalhes_titulo"
+            app:layout_constraintTop_toBottomOf="@+id/detalhes_titulo"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:text="2019"/>
+
+
+
+        <TextView
+            android:id="@+id/detalhes_autor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/detalhes_ano_lancamento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detalhes_ano_lancamento"
+            android:text="Autor da Silva"
+            android:textSize="24sp" />
+
+
+
+        <TextView
+            android:id="@+id/detalhes_editora"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/detalhes_autor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detalhes_autor"
+            android:text="Vagalume"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/detalhes_qtd_copias_disponiveis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/detalhes_editora"
+            app:layout_constraintTop_toBottomOf="@id/detalhes_editora"
+            android:text="4"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/label_qtd_copias"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/detalhes_qtd_copias_disponiveis"
+            app:layout_constraintTop_toBottomOf="@id/detalhes_editora"
+            android:text=" copias disponíveis"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/lable_comentarios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/detalhes_qtd_copias_disponiveis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detalhes_qtd_copias_disponiveis"
+            android:text="Comentarios"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:background="@color/blue_bandeira_bra"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText_comentario"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@id/lable_comentarios"
+            app:layout_constraintEnd_toEndOf="@id/lable_comentarios"
+            app:layout_constraintTop_toBottomOf="@id/lable_comentarios"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_comentario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            app:layout_constraintEnd_toEndOf="@id/editText_comentario"
+            app:layout_constraintTop_toBottomOf="@id/editText_comentario"
+            android:textSize="12sp"
+            android:backgroundTint="@color/blue_variante_bandeira_bra"
+            android:layout_marginRight="3dp"
+            app:cornerRadius="0dp" />
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@+id/lable_comentarios"
+            app:layout_constraintEnd_toEndOf="@+id/lable_comentarios"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_comentario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            layout="@layout/lista_comentario"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/livro_titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Contos dos pescadores" />
+
+
+        <TextView
+            android:id="@+id/livro_autor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nelson Fernandes Souza"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintStart_toStartOf="@id/livro_titulo"
+            app:layout_constraintTop_toBottomOf="@id/livro_titulo"
+            app:layout_constraintEnd_toEndOf="@+id/livro_titulo"
+            android:layout_marginBottom="8dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_livo_cesta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            android:visibility="visible"
+            android:text="Add Cesta"
+            android:textColor="@color/green_bandeira_bra"
+            android:backgroundTint="@color/white"
+            app:rippleColor="@color/green_variante_bandeira_bra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/livro_autor"
+            app:cornerRadius="5dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_remove_livo_cesta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            android:visibility="invisible"
+            android:text="Remover"
+            android:textColor="@color/yellow_bandeira_bra"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            app:rippleColor="@color/yellow_variante_bandeira_bra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/livro_autor"
+            app:cornerRadius="10dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
